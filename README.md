@@ -35,5 +35,5 @@ _2.Messages_
 
 _3.Contacts_
 
-3.1 `GET` `http://localhost:7777/api/contacts/:id` _to get contact list for user with :id_
+3.1 `GET` `http://localhost:7777/api/contacts/:id` _to retrieve contact list for user with :id_
 
