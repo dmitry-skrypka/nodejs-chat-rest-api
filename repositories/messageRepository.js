@@ -1,3 +1,4 @@
+
 const Repository = require("./generalRepository");
 const Message = require("../models/message.model");
 
@@ -7,7 +8,8 @@ function MessageRepository() {
     this.getById = getById;
     this.removeById = removeById;
     this.updateOne = updateOne;
-    this.getContacts = getContacts;
+    // this.getContacts = getContacts;
+    this.getReceiverId = getReceiverId;
 }
 
 MessageRepository.prototype = new Repository();
@@ -38,12 +40,18 @@ function updateOne(obj, _id, callback) {
     query.exec(callback);
 }
 
-function getContacts(id, callback) {
+// function getContacts(id, callback) {
+//     let model = this.model;
+//     let query = model.find({senderId: id});
+//     // console.log(query);
+//     query.exec(callback);
+// }
+function getReceiverId(id, callback) {
+
     let model = this.model;
-    let query = model.find({senderId: id});
-    // console.log(query);
+
+    let query = model.distinct('receiverId', {senderId: id});
     query.exec(callback);
 }
-
 
 module.exports = new MessageRepository();

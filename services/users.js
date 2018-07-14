@@ -37,6 +37,13 @@ module.exports = {
             callback(err, data);
         });
     },
+
+    // test: (obj, callback) => {
+    //     UserRepository.test(obj, (err, data) => {
+    //         callback(err, data);
+    //     });
+    // },
+
 };
 
 

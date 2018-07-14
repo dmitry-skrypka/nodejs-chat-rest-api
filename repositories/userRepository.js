@@ -8,6 +8,7 @@ function UserRepository() {
     this.getByIds = getByIds;
     this.removeById = removeById;
     this.update = update;
+
 }
 
 UserRepository.prototype = new Repository();
@@ -39,6 +40,7 @@ function update(obj, callback) {
     let query = model.update({id: obj.id}, {name: obj.name, email: obj.email});
     query.exec(callback);
 }
+
 
 module.exports = new UserRepository();
 

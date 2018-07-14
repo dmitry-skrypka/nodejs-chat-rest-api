@@ -30,11 +30,15 @@ module.exports = {
         });
     },
 
-    getContacts: (id, callback) => {
-        MessageRepository.getContacts(id, (err, data) => {
+    // getContacts: (id, callback) => {
+    //     MessageRepository.getContacts(id, (err, data) => {
+    //         callback(err, data);
+    //     });
+    // },
+    getReceiverId: (id, callback) => {
+        MessageRepository.getReceiverId(id, (err, data) => {
             callback(err, data);
         });
     }
-
 
 };
