@@ -37,3 +37,4 @@ _3.Contacts_
 
 3.1 `GET` `http://localhost:7777/api/contacts/:id` _to retrieve contact list for user with :id_
 
+[POSTMAN COLLECTION](https://www.getpostman.com/collections/ea57dce5665afab67331)
