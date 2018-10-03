@@ -1,5 +1,5 @@
-# BSTask05
-NodeJs chat rest API
+# NodeJS chat rest API
+NodeJS chat rest API
 
 
 1. Make sure mongo instance is running // `mongodb://localhost:27017/chat`
